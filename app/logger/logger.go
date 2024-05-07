@@ -44,6 +44,7 @@ func (l *LogStreamer) Go(ctx context.Context) *LogStreamer {
 			Stderr:            true,
 			InactivityTimeout: time.Hour * 10000,
 			Context:           l.ctx,
+			Timestamps:        true,
 		}
 
 		var err error
